@@ -12,7 +12,7 @@ from typing import Any
 
 
 SOCKET = "/ipc/fast-browser.sock"
-VERSION = "0.1.0-beta.8"
+VERSION = "0.1.0-beta.9"
 
 
 def request(command: str, args: dict[str, Any]) -> dict[str, Any]:
