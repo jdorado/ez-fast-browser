@@ -1,0 +1,25 @@
+name: Verify
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run contract tests
+        run: npm run verify
+      - name: Verify release package contents
+        run: npm pack --dry-run --ignore-scripts
+      - name: Build runtime image
+        run: docker build --target runtime -t ez-fast-browser:verify .

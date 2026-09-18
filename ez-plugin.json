@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "fast-browser",
+  "version": "0.1.0-beta.8",
+  "description": "Bounded Jev browser sessions with isolated Chromium and explicitly configured desktop access",
+  "commands": {
+    "fast-browser": {
+      "executable": "bin/fast-browser",
+      "args": [],
+      "exposure": {
+        "receivesExternalContent": true,
+        "sendsExternally": true,
+        "changesRecords": true,
+        "requiresReview": true
+      }
+    }
+  },
+  "skills": ["skills/fast-browser/SKILL.md"]
+}

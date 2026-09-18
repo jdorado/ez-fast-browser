@@ -1,0 +1,46 @@
+{
+  "name": "@jc_stack/ez-fast-browser",
+  "version": "0.1.0-beta.8",
+  "private": true,
+  "description": "Bounded Jev-powered browser sessions for Ez agents",
+  "license": "MIT",
+  "keywords": ["ez", "browser", "jev", "automation", "agent"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdorado/ez-fast-browser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jdorado/ez-fast-browser/issues"
+  },
+  "homepage": "https://github.com/jdorado/ez-fast-browser#readme",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "files": [
+    "bin/fast-browser",
+    "src/cli.py",
+    "src/companion.py",
+    "src/runtime.py",
+    "src/server.py",
+    "skills/fast-browser/SKILL.md",
+    "docs/desktop-companion.md",
+    "ez-plugin.json",
+    "ez-deployment.json",
+    "Dockerfile",
+    ".dockerignore",
+    "README.md",
+    "SECURITY.md",
+    "AGENTS.md",
+    "THIRD_PARTY_NOTICES.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "python3 -m unittest discover -s test -v",
+    "verify": "python3 -m py_compile src/*.py && python3 -m unittest discover -s test -v"
+  },
+  "ezRelease": {
+    "protocol": 1,
+    "kind": "plugin",
+    "stateSchema": 1,
+    "mainProtocol": 1
+  }
+}

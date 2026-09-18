@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "services": {
+    "browser": {
+      "buildTarget": "runtime",
+      "volumes": {
+        "state": "/state",
+        "ipc": "/ipc"
+      },
+      "healthcheck": ["python3", "/app/src/server.py", "--health"],
+      "command": ["python3", "/app/src/server.py"],
+      "memoryMiB": 768,
+      "cpus": 1
+    }
+  },
+  "commands": {
+    "fast-browser": {
+      "service": "browser",
+      "argv": ["python3", "/app/src/cli.py"]
+    }
+  }
+}
