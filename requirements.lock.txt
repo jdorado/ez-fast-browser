@@ -1,0 +1,2 @@
+# Frozen runtime dependency set for the plugin image and CI.
+websockets==15.0.1

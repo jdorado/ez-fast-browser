@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 22
       - name: Install Python dependencies
-        run: python3 -m pip install --disable-pip-version-check -r requirements.txt
+        run: python3 -m pip install --disable-pip-version-check -r requirements.lock.txt
       - name: Run contract tests
         run: npm run verify
       - name: Verify release package contents

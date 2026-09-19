@@ -59,6 +59,11 @@ and review requirements.
 
 ## Verification
 
+The supported dependency range is declared in `requirements.txt`; the reviewed
+runtime set is frozen in `requirements.lock.txt`. CI and the runtime image
+install the lock so source, package and image verification use the same Python
+dependency version.
+
 Run the package checks:
 
 ```sh
