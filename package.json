@@ -15,6 +15,7 @@
   "homepage": "https://github.com/jdorado/ez-fast-browser#readme",
   "type": "module",
   "engines": { "node": ">=22" },
+  "packageManager": "pnpm@10.30.3",
   "files": [
     "bin/fast-browser",
     "src/cli.py",
@@ -32,12 +33,14 @@
     "AGENTS.md",
     "requirements.txt",
     "requirements.lock.txt",
+    "scripts/release-check.mjs",
     "THIRD_PARTY_NOTICES.md",
     "LICENSE"
   ],
   "scripts": {
     "test": "python3 -m unittest discover -s test -v",
-    "verify": "python3 -m py_compile src/*.py && python3 -m unittest discover -s test -v"
+    "verify": "python3 -m py_compile src/*.py && python3 -m unittest discover -s test -v",
+    "release:check": "node scripts/release-check.mjs"
   },
   "ezRelease": {
     "protocol": 1,

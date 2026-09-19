@@ -68,6 +68,7 @@ Run the package checks:
 
 ```sh
 npm run verify
+npm run release:check
 npm pack --dry-run --ignore-scripts
 ```
 
