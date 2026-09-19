@@ -1,1 +1,2 @@
+# Compatibility declaration; install requirements.lock.txt for reproducible builds.
 websockets>=15,<16
