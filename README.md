@@ -67,8 +67,8 @@ dependency version.
 Run the package checks:
 
 ```sh
-npm run verify
-npm run release:check
+pnpm run verify
+pnpm run release:check
 npm pack --dry-run --ignore-scripts
 ```
 

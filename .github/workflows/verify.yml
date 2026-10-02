@@ -17,13 +17,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.30.3
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - name: Install Python dependencies
         run: python3 -m pip install --disable-pip-version-check -r requirements.lock.txt
       - name: Run contract tests
-        run: npm run verify
+        run: pnpm run verify
       - name: Verify release package contents
         run: npm pack --dry-run --ignore-scripts
       - name: Build runtime image
