@@ -4,7 +4,13 @@
   "private": true,
   "description": "Bounded Jev-powered browser sessions for Ez agents",
   "license": "MIT",
-  "keywords": ["ez", "browser", "jev", "automation", "agent"],
+  "keywords": [
+    "ez",
+    "browser",
+    "jev",
+    "automation",
+    "agent"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jdorado/ez-fast-browser.git"
@@ -14,7 +20,9 @@
   },
   "homepage": "https://github.com/jdorado/ez-fast-browser#readme",
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "packageManager": "pnpm@10.30.3",
   "files": [
     "bin/fast-browser",
@@ -35,7 +43,8 @@
     "requirements.lock.txt",
     "scripts/release-check.mjs",
     "THIRD_PARTY_NOTICES.md",
-    "LICENSE"
+    "LICENSE",
+    "pnpm-workspace.yaml"
   ],
   "scripts": {
     "test": "python3 -m unittest discover -s test -v",

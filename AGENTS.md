@@ -9,5 +9,5 @@ The native Ez engine owns goal selection, mode selection, authority and review.
 The plugin owns browser transport, validation, private configuration and
 redacted receipts. Tests must not contact TypeSafe, a text model or a real site.
 
-Checks: `npm run verify`, `npm pack --dry-run --ignore-scripts`, and the
+Checks: `pnpm run verify`, `npm pack --dry-run --ignore-scripts`, and the
 standard installed-plugin smoke path.
