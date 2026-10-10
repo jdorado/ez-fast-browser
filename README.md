@@ -14,6 +14,9 @@ It is not a general browser shell. It cannot execute model-generated selectors
 or JavaScript, copy cookies, enter passwords, solve CAPTCHAs, upload/download
 files, follow pop-up/iframe/canvas workflows or retry browser mutations.
 
+Requires Ez core 0.1.0-beta.50 or newer for the manifest example.
+Older cores refuse the update and retain the installed version.
+
 ## Current beta scope
 
 - `isolated` is implemented: each session has fresh Chromium profile state.

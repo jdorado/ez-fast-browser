@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "fast-browser",
-  "version": "0.1.0-beta.9",
+  "version": "0.1.0-beta.10",
   "description": "Bounded Jev browser sessions with isolated Chromium and explicitly configured desktop access",
   "example": "fast-browser run --mode isolated --url https://en.wikipedia.org/wiki/Main_Page --goal-file goal.txt",
   "commands": {
